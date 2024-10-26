@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Own site</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello here is joke for you!!</h1>
+            <h3>
+                <% if (locals.content) { %>
+                    <%= locals.content %>
+                <% } %>
+            </h3>
+        <form action="/submit" method="get">
+            <input type="submit" id="newJokeButton" value="New Joke">
+        </form>
+    </div>
+</body>
+</html>
